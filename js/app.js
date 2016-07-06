@@ -21,9 +21,22 @@ function cambios(e){
         $("#menuc").removeClass() 
         $("#menuc").addClass(e+'Line');
     }
+     if(!$("#"+e+"Back").hasClass('active')){
+        $("#proyectoBack").removeClass();
+        $("#skillsBack").removeClass() 
+        $("#contactoBack").removeClass()  
+        $("#"+e+"Back").addClass('active animated pulse');
+    }
         
 }
 
 $(".tab").on("click",function(){
     cambios($(this).attr("val"));
+    x=$(this);
+      x.addClass('animated bounce');
+    setTimeout(function(){
+       x.removeClass('animated bounce');
+    }, 1000);
+   
+    
 });
