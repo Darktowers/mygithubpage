@@ -27,6 +27,12 @@ function cambios(e){
         $("#contactoBack").removeClass()  
         $("#"+e+"Back").addClass('active animated pulse');
     }
+     if(!$("#"+e+"Logo").hasClass('active')){
+        $("#proyectoLogo").removeClass();
+        $("#skillsLogo").removeClass() 
+        $("#contactoLogo").removeClass()  
+        $("#"+e+"Logo").addClass('active animated pulse');
+    }
         
 }
 
